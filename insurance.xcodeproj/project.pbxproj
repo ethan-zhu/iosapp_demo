@@ -16,6 +16,8 @@
 		EA6C316F20282A8900E25643 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C316E20282A8900E25643 /* main.m */; };
 		EA6C317920282A8A00E25643 /* insuranceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C317820282A8A00E25643 /* insuranceTests.m */; };
 		EA6C318420282A8A00E25643 /* insuranceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C318320282A8A00E25643 /* insuranceUITests.m */; };
+		EA6C319320282AE700E25643 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C319220282AE700E25643 /* User.m */; };
+		EA6C319920282BA000E25643 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C319820282BA000E25643 /* HomeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		EA6C317F20282A8A00E25643 /* insuranceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = insuranceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6C318320282A8A00E25643 /* insuranceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = insuranceUITests.m; sourceTree = "<group>"; };
 		EA6C318520282A8A00E25643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6C319120282AC300E25643 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		EA6C319220282AE700E25643 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		EA6C319720282B9000E25643 /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		EA6C319820282BA000E25643 /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,10 @@
 				EA6C316D20282A8900E25643 /* Info.plist */,
 				EA6C316E20282A8900E25643 /* main.m */,
 				EA6C316520282A8900E25643 /* insurance.xcdatamodeld */,
+				EA6C319120282AC300E25643 /* User.h */,
+				EA6C319220282AE700E25643 /* User.m */,
+				EA6C319720282B9000E25643 /* HomeController.h */,
+				EA6C319820282BA000E25643 /* HomeController.m */,
 			);
 			path = insurance;
 			sourceTree = "<group>";
@@ -268,6 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6C319320282AE700E25643 /* User.m in Sources */,
+				EA6C319920282BA000E25643 /* HomeController.m in Sources */,
 				EA6C316720282A8900E25643 /* insurance.xcdatamodeld in Sources */,
 				EA6C316120282A8900E25643 /* ViewController.m in Sources */,
 				EA6C316F20282A8900E25643 /* main.m in Sources */,
