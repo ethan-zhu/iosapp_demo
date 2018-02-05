@@ -10,6 +10,8 @@
 #import "HomeController.h"
 #import "User.h"
 #import "Product.h"
+#import "InsuranceViewController.h"
+
 
 
 @interface HomeController ()<UITableViewDelegate, UITableViewDataSource>
@@ -18,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *balance;
 @property(strong, nonatomic) NSMutableArray *array;
 @property (weak, nonatomic) IBOutlet UITableView *table;
+@property(strong, nonatomic) Product *currentProduct;
 
 
 @end
@@ -89,7 +92,21 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%@", [self.array objectAtIndex:indexPath.row]);
+    self.currentProduct = [self.array objectAtIndex:indexPath.row];
+    NSLog(@"%@", self.currentProduct.name);
+
+    [self performSegueWithIdentifier:@"showInsuranceDetails" sender:self];
+
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"showInsuranceDetails"]) {
+        InsuranceViewController* view = segue.destinationViewController;
+        view.product = self.currentProduct;
+        NSLog(@"insurance details page");
+        //NSLog(@"fired");
+    }
 }
 
 @end
