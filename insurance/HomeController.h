@@ -10,7 +10,6 @@
 #import "User.h"
 @interface HomeController : UIViewController
 
-
 @property(strong, nonatomic) User* user;
 
 @end

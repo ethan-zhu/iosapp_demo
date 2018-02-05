@@ -18,6 +18,8 @@
 		EA6C318420282A8A00E25643 /* insuranceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C318320282A8A00E25643 /* insuranceUITests.m */; };
 		EA6C319320282AE700E25643 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C319220282AE700E25643 /* User.m */; };
 		EA6C319920282BA000E25643 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C319820282BA000E25643 /* HomeController.m */; };
+		EA6C319B20284FB000E25643 /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6C319A20284FB000E25643 /* money.png */; };
+		EA6C319D2028523600E25643 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6C319C2028523600E25643 /* Product.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		EA6C319220282AE700E25643 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		EA6C319720282B9000E25643 /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
 		EA6C319820282BA000E25643 /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		EA6C319A20284FB000E25643 /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
+		EA6C319C2028523600E25643 /* Product.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		EA6C319E2028525800E25643 /* Product.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,7 @@
 		EA6C315B20282A8900E25643 /* insurance */ = {
 			isa = PBXGroup;
 			children = (
+				EA6C319A20284FB000E25643 /* money.png */,
 				EA6C315C20282A8900E25643 /* AppDelegate.h */,
 				EA6C315D20282A8900E25643 /* AppDelegate.m */,
 				EA6C315F20282A8900E25643 /* ViewController.h */,
@@ -123,6 +129,8 @@
 				EA6C319220282AE700E25643 /* User.m */,
 				EA6C319720282B9000E25643 /* HomeController.h */,
 				EA6C319820282BA000E25643 /* HomeController.m */,
+				EA6C319C2028523600E25643 /* Product.m */,
+				EA6C319E2028525800E25643 /* Product.h */,
 			);
 			path = insurance;
 			sourceTree = "<group>";
@@ -252,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6C316C20282A8900E25643 /* LaunchScreen.storyboard in Resources */,
+				EA6C319B20284FB000E25643 /* money.png in Resources */,
 				EA6C316920282A8900E25643 /* Assets.xcassets in Resources */,
 				EA6C316420282A8900E25643 /* Main.storyboard in Resources */,
 			);
@@ -278,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6C319D2028523600E25643 /* Product.m in Sources */,
 				EA6C319320282AE700E25643 /* User.m in Sources */,
 				EA6C319920282BA000E25643 /* HomeController.m in Sources */,
 				EA6C316720282A8900E25643 /* insurance.xcdatamodeld in Sources */,
