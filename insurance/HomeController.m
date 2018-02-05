@@ -47,7 +47,7 @@
     
     Product* pro3 = [[Product alloc] init];
     [pro3 initObject:@"car insurance" place:@"China" money:100];
-    [self.array addObject:pro2];
+    [self.array addObject:pro3];
     
     Product* pro4 = [[Product alloc] init];
     [pro4 initObject:@"property insurance" place:@"Shanghai" money:50];

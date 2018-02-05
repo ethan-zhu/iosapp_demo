@@ -11,14 +11,22 @@
 #import "Product.h"
 @interface InsuranceViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *name;
+@property (weak, nonatomic) IBOutlet UILabel *place;
+@property (weak, nonatomic) IBOutlet UILabel *money;
 
 @end
 
 @implementation InsuranceViewController
 @synthesize product;
 
-
-
+-(void)viewWillAppear:(BOOL)animated {
+    
+    NSLog(@"applear");
+    self.name.text = product.name;
+    self.place.text = product.place;
+    self.money.text = [NSString stringWithFormat:@"%ld", product.money];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@", self.product.name);
@@ -31,5 +39,9 @@
     
 }
 
+- (IBAction)previous:(id)sender {
+    NSLog(@"button click");
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
