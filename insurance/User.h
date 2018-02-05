@@ -12,7 +12,7 @@
 
 @property(strong, nonatomic) NSString *username;
 @property(strong, nonatomic) NSString *password;
-@property(nonatomic) NSInteger balance;
+@property(nonatomic, assign) NSInteger balance;
 
 - (id)initObject:(NSString*)username pass:(NSString*)password bala:(NSInteger)balance;
 @end

@@ -67,9 +67,10 @@
         currentUser = user;
         //UIStoryboard* story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         //UIViewController *home = [story instantiateViewControllerWithIdentifier:@"home"];
-        [self performSegueWithIdentifier:@"showUserDetails" sender:self];
         //[self.navigationController pushViewController:home animated:YES];
-        NSLog(user.username);
+
+        [self performSegueWithIdentifier:@"showUserDetails" sender:self];
+        //NSLog(user.username);
     } else {
         currentUser=Nil;
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"Username or Password was wrong" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
@@ -82,7 +83,7 @@
     if([segue.identifier isEqualToString:@"showUserDetails"]) {
         HomeController* home = segue.destinationViewController;
         home.user = currentUser;
-        NSLog(@"fired");
+        //NSLog(@"fired");
     }
 }
 

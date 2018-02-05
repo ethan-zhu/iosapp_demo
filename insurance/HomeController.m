@@ -25,19 +25,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@"hello here was the home page");
-    NSLog(@"%@", user.username);
+    //NSLog(@"hello here was the home page");
     _name.text = user.username;
+    NSString *balance =[NSString stringWithFormat:@"%ld", user.balance];
     
-    //_balance.text = user.balance ;
+    //NSLog(@"%@", balance);
+    _balance.text =  balance;
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
 }
 
+- (IBAction)logout:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+    
+    
+}
 
 @end
 
