@@ -23,10 +23,22 @@
 @implementation ViewController
 @synthesize currentUser;
 
+-(void)viewWillAppear:(BOOL)animated {
+
+    NSLog(@"applear");
+    currentUser = Nil;
+    self.username.text = Nil;
+    self.passport.text = Nil;
+    
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.array = [[NSMutableArray alloc] init];
+    
     self.passport.secureTextEntry = YES;
     
     User* user1 = [[User alloc] init];
@@ -45,7 +57,7 @@
     [user4 initObject:@"li" pass:@"li" bala:500];
     [self.array addObject:user4];
     
-    currentUser = Nil;
+    //currentUser = Nil;
     NSLog(@"load logon page");
     // Do any additional setup after loading the view, typically from a nib.
 }

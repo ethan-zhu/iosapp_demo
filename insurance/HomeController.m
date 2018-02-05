@@ -41,7 +41,7 @@
 }
 
 - (IBAction)logout:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     
 }
